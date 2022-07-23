@@ -1,0 +1,20 @@
+  .container {
+    width: 80%;
+    max-width: 1600px;
+  }
+  .grid-row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    grid-gap: 50px;
+  }
+  .colmun-left {
+    text-align: left;
+  }
+  .colmun-right {
+    text-align: right;
+  }
+  
+  
+
+  
