@@ -1,8 +1,11 @@
+import Image from "next/image";
 import Navbar from "./components/Navbar"
 const home = () => {
   return (
     <><Navbar/>
-    <div>Welcome to home page</div></>
+    <div className="image__styling"></div>
+    <p>Welcome to Home page </p>
+    </>
   )
 }
 

@@ -1,12 +1,12 @@
-import React from 'react'
-
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 const index = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
+      <div className="image__styling"></div>
+      <p>hello</p>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;

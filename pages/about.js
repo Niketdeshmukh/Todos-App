@@ -2,7 +2,8 @@ import Navbar from "./components/Navbar"
 const about = () => {
   return (
     <><Navbar/>
-    <div>Welcome to About us!</div></>
+    <div className="image__styling"></div>
+    <p>Welcome to About us!</p></>
   )
 }
 
