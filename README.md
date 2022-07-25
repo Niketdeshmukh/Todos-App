@@ -76,12 +76,13 @@ app.prepare()
 
 ## Built With :zap:
 
-1. Node
+```ruby 1. Node
 2. Express
 3. React
 4. Next JS
 5. Webpack
 6. Babel
+```
 
 # Useful Blogs
 
@@ -91,12 +92,3 @@ app.prepare()
 
 1. [GraphQL API Plugin for WordPress](https://github.com/wp-graphql/wp-graphql)
 
-## Author :bust_in_silhouette:
-
-* **[Imran Sayed](https://codeytek.com)**
-
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
