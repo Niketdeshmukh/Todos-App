@@ -7,7 +7,7 @@ const ErrorPage = () => {
   useEffect(()=>{
       setTimeout(()=>{
         router.push("/");
-      },5000)
+      },15000)
   },[])
   const handleInput = () => {
     router.push("/");
@@ -49,6 +49,12 @@ const ErrorPage = () => {
         }
       `}</style>
       <style jsx global>{`
+      .container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top:15rem;
+      }
         .go-home {
           padding: 5px 20px;
           background: #ffa000;

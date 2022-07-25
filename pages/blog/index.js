@@ -1,8 +1,8 @@
-import React from 'react'
-
+import Navbar from "../components/Navbar"
 const index = () => {
   return (
-    <div>Welcome to blog</div>
+    <><Navbar/>
+    <div>Welcome to blog</div></>
   )
 }
 
