@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Navbar from "../components/Navbar";
 import styles from "../../styles/index.module.css";
 import {useState} from 'react';
@@ -8,6 +9,10 @@ const [description, setDescription] = useState('');
 
   return (
     <>
+    <Head>
+        <title>Home</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <div className="image__styling"></div>
       <div className={styles.todos_container}>

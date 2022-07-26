@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useEffect } from "react";
 import "../styles/404.module.css";
 import { useRouter } from "next/router";
@@ -14,6 +15,10 @@ const ErrorPage = () => {
   };
   return (
     <>
+    <Head>
+        <title>Oops! 404</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <style jsx>{`
         .container {
           padding: 4rem;
