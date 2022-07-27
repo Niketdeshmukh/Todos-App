@@ -15,7 +15,7 @@ const Navbar = () => {
 <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong">
   <div className="container-fluid">
     <Link href="/">
-    <a className="navbar-brand" >Brand</a></Link>
+    <a className="navbar-brand" >Website</a></Link>
 
     <button
       className="navbar-toggler"
@@ -42,6 +42,10 @@ const Navbar = () => {
         <li className="nav-item">
           <Link href="/blog">
           <a className="nav-link" >Blog</a></Link>
+        </li>
+        <li className="nav-item">
+          <Link href="/todo">
+          <a className="nav-link" >Todo</a></Link>
         </li>
         
       </ul>
