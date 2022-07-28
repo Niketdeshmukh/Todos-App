@@ -2,14 +2,15 @@ import Head from 'next/head'
 import { useEffect } from "react";
 import "../styles/404.module.css";
 import { useRouter } from "next/router";
+import Navbar from './components/Navbar';
 const ErrorPage = () => {
   const router = useRouter();
 
-  useEffect(()=>{
-      setTimeout(()=>{
-        router.push("/");
-      },15000)
-  },[])
+  // useEffect(()=>{
+  //     setTimeout(()=>{
+  //       router.push("/");
+  //     },15000)
+  // },[])
   const handleInput = () => {
     router.push("/");
   };
@@ -19,6 +20,7 @@ const ErrorPage = () => {
         <title>Oops! 404</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      
       <style jsx>{`
         .container {
           padding: 4rem;
@@ -54,6 +56,10 @@ const ErrorPage = () => {
         }
       `}</style>
       <style jsx global>{`
+       .wrapper{
+        background: #00000042;
+        height:100vh;
+      } 
       .container{
         display:flex;
         align-items:center;
@@ -80,6 +86,7 @@ const ErrorPage = () => {
         }
       `}</style>
       <div className="wrapper">
+      <Navbar/>
         <div className="container">
           <div className="grid-row">
             <div className="colmun colmun-left">
