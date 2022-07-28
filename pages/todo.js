@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 import { Button, Card, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
@@ -66,6 +67,10 @@ const todo = () => {
   }
   return (
     <>
+    <Head>
+        <title>Todo</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <div className="image__styling"></div>
       <div className="app">

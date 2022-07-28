@@ -10,7 +10,7 @@ const [description, setDescription] = useState('');
   return (
     <>
     <Head>
-        <title>Home</title>
+        <title>Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
