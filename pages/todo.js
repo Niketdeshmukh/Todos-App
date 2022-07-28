@@ -50,10 +50,13 @@ const todo = () => {
         setValue("")
     };
     return(
+    
         <Form onSubmit={handleSubmit}> 
     <Form.Group>
-      <Form.Label><b>Add Todo</b></Form.Label>
+        
+      <Form.Label><b style={{color: "#ccc"}}>Add Todo</b></Form.Label>
       <Form.Control type="text" className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />
+      
     </Form.Group>
     <Button variant="primary mb-3" type="submit" style={{marginTop:"12px"}}>
       Submit
@@ -66,14 +69,23 @@ const todo = () => {
       <Navbar />
       <div className="image__styling"></div>
       <div className="app">
-        <div className="container">
-          <h1 className="text-center mb-4">Todo List</h1>
+      <div className="code-editor">
+        <div className="top-bar">
+                <ul className="control">
+                  <li className="button" onclick="closeTab()"></li>
+                  <li className="button"></li>
+                  <li className="button"></li>
+                </ul>
+                <div className="file-path">~/Users/NIKET/todosList</div>
+              </div>
+        <div className="container" style={{    padding: "0px 100px 0px 100px"}} >
+          <h1 className="text-center mb-4" style={{color:"#f0ffffc9"}}>Todo List</h1>
           <FormTodo addTodo={addTodo} />
           <div>
             {todos.map((todo, index) => (
-              <Card>
+              <Card style={{marginBottom:"30px"}}>
                 <Card.Body>
-                  <Todo
+                  <Todo 
                     key={index}
                     index={index}
                     todo={todo}
@@ -84,6 +96,7 @@ const todo = () => {
               </Card>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </>
