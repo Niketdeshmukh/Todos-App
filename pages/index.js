@@ -22,7 +22,7 @@ const index = ({ data }) => {
 
       <div className="image__styling"></div>
       <Navbar />
-      <p>hello</p>
+      <p>hello there</p>
       {data.slice(0, 5).map((curElem) => {
         return (
           <div key={curElem.id} className={styles.ssr_styles}>
