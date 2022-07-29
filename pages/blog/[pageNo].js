@@ -1,22 +1,21 @@
-import {useRouter} from 'next/router'
+import { useRouter } from "next/router";
 import Navbar from "../components/Navbar";
 import styles from "../../styles/index.module.css";
 
-export const getStaticPaths= async()=>{
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+export const getStaticPaths = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await res.json();
 
-  const paths = data.map((curElem)=>{
+  const paths = data.map((curElem) => {
     return {
-      params:{pageNo:curElem.id.toString(),
-      }
-    }
-  })
+      params: { pageNo: curElem.id.toString() },
+    };
+  });
   return {
     paths,
-    fallback:false,
-  }
-}
+    fallback: false,
+  };
+};
 
 export const getStaticProps = async (context) => {
   const id = context.params.pageNo;
@@ -34,7 +33,7 @@ const pageNo = ({ data }) => {
   const { id, title, body } = data;
   return (
     <>
-    <div className='image__styling'></div>
+      <div className="image__styling"></div>
       <Navbar />
       <div className={`${styles.ssr_styles} ssr_styles_inside`}>
         <h3>{id}</h3>
@@ -45,4 +44,4 @@ const pageNo = ({ data }) => {
   );
 };
 
-export default pageNo
+export default pageNo;

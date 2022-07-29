@@ -1,15 +1,15 @@
-import Head from 'next/head'
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 import styles from "../../styles/index.module.css";
-import {useState} from 'react';
+import { useState } from "react";
 const index = () => {
-const [todos, setTodos] = useState([]); 
-const [title, setTitle] = useState(''); 
-const [description, setDescription] = useState(''); 
+  const [todos, setTodos] = useState([]);
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
@@ -31,7 +31,7 @@ const [description, setDescription] = useState('');
                 color: "white",
                 backgroundColor: "rgba(0,0,0,0.5)",
               }}
-              onChange={e => setTitle(e.target.value)}
+              onChange={(e) => setTitle(e.target.value)}
               value={title}
               id="title"
               placeholder="Enter blog's title"
@@ -47,10 +47,10 @@ const [description, setDescription] = useState('');
               name="description"
               required
               style={{
-                overflowY: 'hidden'
+                overflowY: "hidden",
               }}
-              onChange={e => setDescription(e.target.value) }
-              value={description} 
+              onChange={(e) => setDescription(e.target.value)}
+              value={description}
             />
           </div>
           <div className={styles.form_group}>
