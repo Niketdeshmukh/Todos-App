@@ -79,4 +79,7 @@ p{
   -webkit-transform: translateX(7px);
   transform: translateX(7px);
 }
-
+.container__style{
+  padding: 25px;
+  margin-right: 22px;
+}
