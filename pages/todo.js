@@ -79,13 +79,13 @@ const todo = () => {
       <div className={Styles2.code__editor}>
         <div className={Styles2.top__bar}>
                 <ul className={Styles2.control}>
-                  <li className={Styles2.button} onclick="closeTab()"></li>
+                  <li className={Styles2.button}></li>
                   <li className={Styles2.button}></li>
                   <li className={Styles2.button}></li>
                 </ul>
                 <div className={Styles2.file__path}>~/Users/NIKET/todosList</div>
               </div>
-        <div className={Styles2.container} style={{    padding: "0px 100px 0px 100px"}} >
+        <div className={Styles1.container} style={{    }} >
           <h1 className={`${Styles2.text__center} ${Styles2.mb-4}`} style={{color:"#f0ffffc9"}}>Todo List</h1>
           <FormTodo addTodo={addTodo} />
           <div>
