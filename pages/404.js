@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image"
 import { useEffect } from "react";
 import "../styles/404.module.css";
 import { useRouter } from "next/router";
@@ -90,13 +91,16 @@ const ErrorPage = () => {
         <div className="container">
           <div className="grid-row">
             <div className="colmun colmun-left">
-              <img
-                src="image-left.png"
+              <Image
+                src="/image-left.png"
                 className="left-shape"
                 alt="image-left"
+                height={100}
+                width={200}
+                
               />
               <h1 className="px-spc-b-20">
-                We can't find the page you are looking for.
+                We can&#39;t find the page you are looking for.
               </h1>
               <span className="px-spc-b-20">
                 This page has been relocated or removed.
@@ -107,10 +111,12 @@ const ErrorPage = () => {
               </a>
             </div>
             <div className="colmun colmun-right">
-              <img
-                src="right-shape.png"
+              <Image
+                src="/right-shape.png"
                 className="right-shape"
                 alt="right-shape"
+                height={400}
+                width={400}
               />
             </div>
           </div>
