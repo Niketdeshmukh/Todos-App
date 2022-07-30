@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import styles from "../../styles/index.module.css";
-import { useState } from "react";
-const index = () => {
+
+const Index = () => {
   const [todos, setTodos] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -64,4 +65,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
