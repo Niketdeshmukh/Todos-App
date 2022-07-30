@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Styles1 from '../styles/todo.module.css'
 import Styles2 from '../styles/codeEditor.module.css'
-const todo = () => {
+const Todo = () => {
   const [todos, setTodos] = useState([
     {
       text: "Complete your todos list 😊",
@@ -110,4 +110,4 @@ const todo = () => {
   );
 };
 
-export default todo;
+export default Todo;
