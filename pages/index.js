@@ -23,23 +23,40 @@ const index = ({ data }) => {
       <Navbar />
       <div className="container__style">
         <p>hello there</p>
-        <p style={{ color: "#252829a8",    display: "flex",
-    marginLeft: "12px",
-    alignItems: "baseline" }}>
+        <p
+          style={{
+            color: "#252829a8",
+            display: "flex",
+            marginLeft: "12px",
+            alignItems: "baseline",
+          }}
+        >
           Please navigate to home page{" "}
           <Link href="/home" target="_blank">
             <a className="arrow-link"> </a>
           </Link>
         </p>
-        <p style={{ color: "#2d2f3082" }}>
+        <p
+          style={{
+            color: "#2d2f3082",
+            display: "flex",
+            marginLeft: "12px",
+            alignItems: "baseline",
+          }}
+        >
           Please navigate to todo page{" "}
           <Link href="/todo" target="_blank">
             <a className="arrow-link"> </a>
           </Link>
         </p>
-        <p style={{ color: "#393e405e" , display: "flex",
-    marginLeft: "12px",
-    alignItems: "baseline"}}>
+        <p
+          style={{
+            color: "#393e405e",
+            display: "flex",
+            marginLeft: "12px",
+            alignItems: "baseline",
+          }}
+        >
           Please navigate to blog page{" "}
           <Link href="/blog" target="_blank">
             <a className="arrow-link"> </a>

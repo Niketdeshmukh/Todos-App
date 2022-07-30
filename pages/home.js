@@ -14,13 +14,27 @@ const home = () => {
       <p style={{ color: "#252829a8", marginLeft: "2rem" }}>
         Here you can make the todos list and also write some blogs{" "}
       </p>
-      <p style={{ color: "#2d2f3082" }}>
+      <p
+        style={{
+          color: "#2d2f3082",
+          display: "flex",
+          marginLeft: "12px",
+          alignItems: "baseline",
+        }}
+      >
         Just navigate to todo page{" "}
         <Link href="/todo" target="_blank">
           <a className="arrow-link"> </a>
         </Link>
       </p>
-      <p style={{ color: "#393e405e" }}>
+      <p
+        style={{
+          color: "#393e405e",
+          display: "flex",
+          marginLeft: "12px",
+          alignItems: "baseline",
+        }}
+      >
         Just navigate to blog page{" "}
         <Link href="/blog" target="_blank">
           <a className="arrow-link"> </a>
