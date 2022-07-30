@@ -1,4 +1,4 @@
-# Next-app
+# Todos-App
 ## Installation :wrench:
 
 1. Clone this repo by running `git clone https://github.com/imranhsayed/next-js-app`
