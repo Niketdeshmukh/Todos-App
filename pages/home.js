@@ -17,13 +17,13 @@ const home = () => {
       <p style={{ color: "#2d2f3082" }}>
         Just navigate to todo page{" "}
         <Link href="/todo" target="_blank">
-          <a class="arrow-link"> </a>
+          <a className="arrow-link"> </a>
         </Link>
       </p>
       <p style={{ color: "#393e405e" }}>
         Just navigate to blog page{" "}
         <Link href="/blog" target="_blank">
-          <a class="arrow-link"> </a>
+          <a className="arrow-link"> </a>
         </Link>
       </p>
     </>
