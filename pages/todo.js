@@ -3,6 +3,8 @@ import Head from "next/head";
 import { Button, Card, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
+import Styles1 from '../styles/todo.module.css'
+import Styles2 from '../styles/codeEditor.module.css'
 const todo = () => {
   const [todos, setTodos] = useState([
     {
@@ -26,7 +28,7 @@ const todo = () => {
   };
   function Todo({ todo, index, markTodo, removeTodo }) {
     return (
-      <div className="todo">
+      <div className={Styles1.todo}>
         <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>
           {todo.text}
         </span>
@@ -73,18 +75,18 @@ const todo = () => {
       </Head>
       <Navbar />
       <div className="image__styling"></div>
-      <div className="app">
-      <div className="code-editor">
-        <div className="top-bar">
-                <ul className="control">
-                  <li className="button" onclick="closeTab()"></li>
-                  <li className="button"></li>
-                  <li className="button"></li>
+      <div className={Styles1.app}>
+      <div className={Styles2.code__editor}>
+        <div className={Styles2.top__bar}>
+                <ul className={Styles2.control}>
+                  <li className={Styles2.button} onclick="closeTab()"></li>
+                  <li className={Styles2.button}></li>
+                  <li className={Styles2.button}></li>
                 </ul>
-                <div className="file-path">~/Users/NIKET/todosList</div>
+                <div className={Styles2.file__path}>~/Users/NIKET/todosList</div>
               </div>
-        <div className="container" style={{    padding: "0px 100px 0px 100px"}} >
-          <h1 className="text-center mb-4" style={{color:"#f0ffffc9"}}>Todo List</h1>
+        <div className={Styles2.container} style={{    padding: "0px 100px 0px 100px"}} >
+          <h1 className={`${Styles2.text__center} ${Styles2.mb-4}`} style={{color:"#f0ffffc9"}}>Todo List</h1>
           <FormTodo addTodo={addTodo} />
           <div>
             {todos.map((todo, index) => (

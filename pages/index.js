@@ -25,19 +25,19 @@ const index = ({ data }) => {
       <p style={{ color: "#252829a8" }}>
         Please navigate to home page{" "}
         <Link href="/home" target="_blank">
-          <a class="arrow-link"> </a>
+          <a className="arrow-link"> </a>
         </Link>
       </p>
       <p style={{ color: "#2d2f3082" }}>
         Please navigate to todo page{" "}
         <Link href="/todo" target="_blank">
-          <a class="arrow-link"> </a>
+          <a className="arrow-link"> </a>
         </Link>
       </p>
       <p style={{ color: "#393e405e" }}>
         Please navigate to blog page{" "}
         <Link href="/blog" target="_blank">
-          <a class="arrow-link"> </a>
+          <a className="arrow-link"> </a>
         </Link>
       </p>
       {/* {data.slice(0, 5).map((curElem) => {

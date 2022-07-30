@@ -50,11 +50,6 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/typing">
-                  <a className="nav-link">Typing</a>
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link href="/rg">
                   <a className="nav-link">About</a>
                 </Link>

@@ -1,0 +1,120 @@
+.code__editor {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    /* height: 440px; */
+    color: #ccc;
+    background-color: #030f1e;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    text-align: left;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 5px 17px 2px rgb(0 0 0);
+    box-shadow: 10px 5px 17px 2px rgb(0 0 0);
+    padding-bottom: 30px;
+  }
+  
+  .code__editor .top__bar {
+    font-size: 14px;
+    color: #ccc !important;
+    text-align: center;
+    height: 30px;
+    background-color: #333;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .code__editor .top__bar ul.control {
+    list-style: none;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    margin-bottom: 0;
+  }
+  
+  .code__editor .top__bar ul.control .button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  
+  .code__editor .top__bar ul.control .button:first-of-type {
+    background-color: #df6963;
+    cursor: pointer;
+    margin-right: 3px;
+  }
+  
+  .code__editor .top__bar ul.control .button:nth-of-type(2) {
+    background-color: #f5e18a;
+    margin-right: 3px;
+  }
+  
+  .code__editor .top__bar ul.control .button:last-of-type {
+    background-color: #97c38a;
+  }
+  
+  .code__editor .top__bar .file__path {
+    padding: 5px;
+    color: #ccc;
+  }
+  
+  .code__editor ul .line__numbers {
+    list-style: none;
+    padding: 20px 15px 5px;
+    text-align: right;
+    color: #777;
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom-left-radius: 5px;
+    margin: 0;
+  }
+  
+  .code__editor .code {
+    margin-top: 20px;
+    margin-left: 70px;
+    padding-right: 30px;
+  }
+  
+  .code__editor .code p {
+    color: #ccc;
+    margin: 15px 0 24px;
+    line-height: 1.5;
+  }
+  
+  .code__editor .code p.indent {
+    margin-left: 25px;
+  }
+  
+  .code__editor .code p.comment {
+    color: #555;
+  }
+  
+  .code__editor .selector {
+    color: #009897;
+  }
+  
+  .code__editor .prop {
+    color: goldenrod;
+  }
+  
+  @media screen and (max-width: 680px) {
+  
+    .code__editor .top__bar .file__path {
+      font-size: 12px;
+    }
+  
+    .no-mobile {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .code__editor {
+      margin-top: 50px;
+    }
+  }
