@@ -90,7 +90,7 @@ const Todo = () => {
           <FormTodo addTodo={addTodo} />
           <div>
             {todos.map((todo, index) => (
-              <Card style={{marginBottom:"30px"}}>
+              <Card key={index} style={{marginBottom:"30px"}}>
                 <Card.Body>
                   <Todo 
                     key={index}
