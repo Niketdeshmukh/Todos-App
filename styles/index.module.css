@@ -4,6 +4,7 @@
     align-items: center;
     position: relative ;
     top:2rem;
+    padding: 0 20px 0 20px;
   }
   
   .form{
@@ -84,4 +85,10 @@
   .ssr_styles h2:hover {
     color: #189cf0;
     cursor: pointer;
+  }
+
+  @media screen and (max-width:500px){
+    .todos_container{
+      padding: 65px;
+    }
   }
