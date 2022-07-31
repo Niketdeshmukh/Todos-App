@@ -1,7 +1,8 @@
 # Todos-App
-## Installation :wrench:
 
-![My Image](./public/mockup.png)
+<img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/77925518/181934587-d0b573bf-2d70-4524-b5b4-2120434f4054.png">
+
+## Installation :wrench:
 
 1. Clone this repo by running `git clone https://github.com/imranhsayed/next-js-app`
 2. `cd next-js-app`
