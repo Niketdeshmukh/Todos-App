@@ -1,0 +1,30 @@
+.arrow__link {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+    display: inline-block;
+    background-color: transparent;
+    white-space: nowrap;
+    color: var(--lightest-slate);
+  }
+  
+  .arrow__link:after {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: "";
+    background: url(../public/arrow.png) no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .arrow__link:hover:after {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+  }
+  

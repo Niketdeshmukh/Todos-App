@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
+import Styles from "../styles/home.module.css";
 const home = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const home = () => {
       >
         Just navigate to todo page{" "}
         <Link href="/todo" target="_blank">
-          <a className="arrow-link"> </a>
+          <a className={Styles.arrow__link}> </a>
         </Link>
       </p>
       <p
@@ -38,7 +39,7 @@ const home = () => {
       >
         Just navigate to blog page{" "}
         <Link href="/blog" target="_blank">
-          <a className="arrow-link"> </a>
+          <a className={Styles.arrow__link}> </a>
         </Link>
       </p>
       </div>
