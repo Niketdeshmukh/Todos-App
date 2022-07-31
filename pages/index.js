@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "./components/Navbar";
 import Link from "next/link";
+import Styles from "../styles/index.module.css"
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts/");
   const data = await res.json();
@@ -33,7 +34,7 @@ const index = ({ data }) => {
         >
           Please navigate to home page{" "}
           <Link href="/home" target="_blank">
-            <a className="arrow-link"> </a>
+            <a className={Styles.arrow__link}> </a>
           </Link>
         </p>
         <p
@@ -46,7 +47,7 @@ const index = ({ data }) => {
         >
           Please navigate to todo page{" "}
           <Link href="/todo" target="_blank">
-            <a className="arrow-link"> </a>
+            <a className={Styles.arrow__link}> </a>
           </Link>
         </p>
         <p
@@ -59,7 +60,7 @@ const index = ({ data }) => {
         >
           Please navigate to blog page{" "}
           <Link href="/blog" target="_blank">
-            <a className="arrow-link"> </a>
+            <a className={Styles.arrow__link}> </a>
           </Link>
         </p>
       </div>
