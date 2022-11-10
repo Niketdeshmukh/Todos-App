@@ -95,4 +95,4 @@ app.prepare()
 # Useful Links
 
 1. [GraphQL API Plugin for WordPress](https://github.com/wp-graphql/wp-graphql)
-.
+..
